@@ -19,7 +19,7 @@ global.packname = '@iambuitre';
 global.author = 'ʙᴜɪᴛʀᴇ ʙᴏᴛ';
 global.wm = '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝';
 global.titulowm = 'ʙᴜɪᴛʀᴇ ʙᴏᴛ';
-global.titulowm2 = 'ʙᴜɪᴛʀᴇ ʙᴏᴛ`
+global.titulowm = '🤖 ＴＨＥ ＭＹＳＴＩＣ － ＢＯＴ 🤖';
 global.igfg = 'ʙᴜɪᴛʀᴇ ʙᴏᴛ';
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
 
