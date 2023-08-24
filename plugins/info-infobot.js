@@ -56,7 +56,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   const Message = {
     document: { url: `https://f.top4top.io/p_26942pt2i1.jpg` },
     mimetype: `application/${document}`,
-    fileName: `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+    fileName: `「  Buitre Bot 」`,
     fileLength: 99999999999999,
     pageCount: 200,
     contextInfo: {
