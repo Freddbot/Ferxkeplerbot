@@ -1,18 +1,18 @@
 const handler = async (m, {conn}) => {
   try {
     const pp = imagen6;
-    const img = await(await fetch('https://github.com/BrunoSobrino.png')).buffer();
+    const img = await(await fetch('https://f.top4top.io/p_26942pt2i1.jpg')).buffer();
     const _uptime = process.uptime() * 1000;
     const uptime = clockString(_uptime);
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    const str = `╭────[ *𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭* ]
+    const str = `╭────[ *ʙᴜɪᴛʀᴇ ʙᴏᴛ* ]
 │
 │ *➤ ʜᴏʟᴀ ${taguser}*
 │
 │ *=> 🤖 ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:* ${uptime}
 │ *=> ✅ ʙᴏᴛ ᴅᴇ ᴜsᴏ ᴘᴜʙʟɪᴄᴏ*
-│ *=> 👑 ᴄʀᴇᴀᴅᴏʀ: ʙʀᴜɴᴏ sᴏʙʀɪɴᴏ*
-│ *=> 🔗 ᴄᴜᴇɴᴛᴀs ᴏғᴄ:* https://www.atom.bio/theshadowbrokers-team
+│ *=> 👑 ᴄʀᴇᴀᴅᴏʀ: ʙᴜɪᴛʀᴇ ʙᴏᴛ*
+│ *=> 🔗 ᴄᴜᴇɴᴛᴀs ᴏғᴄ:* http://buitre.boxmineworld.com
 ╰────────────────`.trim();
     if (m.isGroup) {
       conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm, "containsAutoReply": true, "mediaType": 1, "thumbnail": pp, "mediaUrl": `https://www.atom.bio/theshadowbrokers-team`, "sourceUrl": `https://www.atom.bio/theshadowbrokers-team`}}}, {quoted: m});
