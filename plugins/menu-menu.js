@@ -20,11 +20,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `┏━━━━━━━━━━━━━━━━━┓
+    const str = `┏━━━━━━━━━━━━━━━━┓
 ║    ◉— *𝗕𝗨𝗜𝗧𝗥𝗘 𝗕𝗢𝗧* —◉
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *ʜᴏʟᴀ, ${taguser}*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *ᴄʀᴇᴀᴅᴏʀ:* 𝗕𝘂𝗶𝘁𝗿𝗲 𝗢𝗙𝗖
 ║➤ *ɴᴜᴍᴇʀᴏ ᴄʀᴇᴀᴅᴏʀ:* wa.me/34604135921
 ║➤ *ʙᴏᴛ ᴏꜰᴄ:* wa.me/573145649651
@@ -32,7 +32,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ║➤ *Fecha:* ${date}
 ║➤ *Tiempo activo:* ${uptime}
 ║➤ *Usuarios:* ${rtotalreg}
-┗━━━━━━━━━━━━━━━━━┛
+┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 />*
