@@ -20,20 +20,19 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *ʙᴜɪᴛʀᴇ ʙᴏᴛ* —◉
+    const str = `┏━━━━━━━━━━━━━━━━━━━━━┓
+║    ◉— *𝗕𝗨𝗜𝗧𝗥𝗘 𝗕𝗢𝗧* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *𝗛ola, ${taguser}*
+║➤ *ʜᴏʟᴀ, ${taguser}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *Owner:* Buitre OFC
-║➤ *Numero:* wa.me/34604135921
-║➤ *Bot ofc:* wa.me/573145649651
-║➤ *Bot ofc 2:* wa.me/34604135921
+║➤ *ᴄʀᴇᴀᴅᴏʀ:* 𝗕𝘂𝗶𝘁𝗿𝗲 𝗢𝗙𝗖
+║➤ *ɴᴜᴍᴇʀᴏ ᴄʀᴇᴀᴅᴏʀ:* wa.me/34604135921
+║➤ *ʙᴏᴛ ᴏꜰᴄ:* wa.me/573145649651
 ║➤ *PayPal:* https://www.paypal.me/Buitre01
 ║➤ *Fecha:* ${date}
 ║➤ *Tiempo activo:* ${uptime}
 ║➤ *Usuarios:* ${rtotalreg}
-╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
+┗━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 />*
@@ -65,14 +64,12 @@ ${readMore}
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝕀ℕ𝔽𝕆 𝔹𝕆𝕋 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 💟 _${usedPrefix}terminosycondiciones_
 ┣ ඬ⃟ 💟 _${usedPrefix}grupos_
 ┣ ඬ⃟ 💟 _${usedPrefix}estado_
 ┣ ඬ⃟ 💟 _${usedPrefix}infobot_
 ┣ ඬ⃟ 💟 _${usedPrefix}speedtest_
 ┣ ඬ⃟ 💟 _${usedPrefix}donar_
 ┣ ඬ⃟ 💟 _${usedPrefix}owner_
-┣ ඬ⃟ 💟 _${usedPrefix}script_
 ┣ ඬ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 ┗━━━━━━━━━━━━━━━━┛
 
@@ -225,6 +222,11 @@ ${readMore}
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝔾ℝ𝕌ℙ𝕆𝕊 />* 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
+┣ ඬ⃟ 💎 _${usedPrefix}.4vs4
+┣ ඬ⃟ 💎 _${usedPrefix}.6vs4
+┣ ඬ⃟ 💎 _${usedPrefix}.8vs8
+┣ ඬ⃟ 💎 _${usedPrefix}.12vs12
+┣ ඬ⃟ 💎 _${usedPrefix}.16vs16
 ┣ ඬ⃟ 💎 _${usedPrefix}add *<numero>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick2 *<@tag>*_
