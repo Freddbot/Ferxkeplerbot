@@ -222,11 +222,11 @@ ${readMore}
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝔾ℝ𝕌ℙ𝕆𝕊 />* 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 💎 _${usedPrefix}.4vs4
-┣ ඬ⃟ 💎 _${usedPrefix}.6vs4
-┣ ඬ⃟ 💎 _${usedPrefix}.8vs8
-┣ ඬ⃟ 💎 _${usedPrefix}.12vs12
-┣ ඬ⃟ 💎 _${usedPrefix}.16vs16
+┣ ඬ⃟ 💎 ${usedPrefix}4vs4
+┣ ඬ⃟ 💎 ${usedPrefix}6vs4
+┣ ඬ⃟ 💎 ${usedPrefix}8vs8
+┣ ඬ⃟ 💎 ${usedPrefix}12vs12
+┣ ඬ⃟ 💎 ${usedPrefix}16vs16
 ┣ ඬ⃟ 💎 _${usedPrefix}add *<numero>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick2 *<@tag>*_
