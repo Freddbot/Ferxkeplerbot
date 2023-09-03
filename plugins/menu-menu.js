@@ -52,41 +52,41 @@ ${readMore}
 *╭━━━[𝗦𝗢𝗟𝗨𝗖𝗜𝗢𝗡 𝗔 𝗘𝗥𝗥𝗢𝗥𝗘𝗦]━━⬣*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ➺ Mensajes en espera
-┣ ඬ⃟ ⭐ _${usedPrefix}fixmsgespera_
+┣ ⭐ _${usedPrefix}fixmsgespera_
 ┣ ➺ Mensajes en espera (owner)
-┣ ඬ⃟ ⭐ _${usedPrefix}dsowner_
+┣ ⭐ _${usedPrefix}dsowner_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[𝗜𝗡𝗙𝗢 𝗕𝗢𝗧]━━⬣*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┃➺ ඬ⃟ 💟 _${usedPrefix}grupos_
-┃➺ ඬ⃟ 💟 _${usedPrefix}estado_
-┃➺ ඬ⃟ 💟 _${usedPrefix}infobot_
-┃➺ ඬ⃟ 💟 _${usedPrefix}speedtest_
-┃➺ ඬ⃟ 💟 _${usedPrefix}donar_
-┃➺ ඬ⃟ 💟 _${usedPrefix}owner_
-┃➺ ඬ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+┃➺ 💟 _${usedPrefix}grupos_
+┃➺ 💟 _${usedPrefix}estado_
+┃➺ 💟 _${usedPrefix}infobot_
+┃➺ 💟 _${usedPrefix}speedtest_
+┃➺ 💟 _${usedPrefix}donar_
+┃➺ 💟 _${usedPrefix}owner_
+┃➺ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 *╰━━━━━━━━━━━━⬣*
 *╭━━━[𝗨𝗡𝗘 𝗨𝗡 𝗕𝗢𝗧 𝗔 𝗧𝗨 𝗚𝗥𝗨𝗣𝗢]━━⬣*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ *ඬ⃟ 👽_Escribe Al +34604135921_*
+┣ *👽_Escribe Al +34604135921_*
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝕊𝔼ℝ𝔹𝕆𝕋 - 𝕁𝔸𝔻𝕀𝔹𝕆𝕋 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🤖 _${usedPrefix}serbot_
-┣ ඬ⃟ 🤖 _${usedPrefix}stop_
-┣ ඬ⃟ 🤖 _${usedPrefix}bots_
+┣ 🤖 _${usedPrefix}serbot_
+┣ 🤖 _${usedPrefix}stop_
+┣ 🤖 _${usedPrefix}bots_
 ┗━━━━━━━━━━━━━━━━┛  
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝕁𝕌𝔼𝔾𝕆𝕊 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}prostituto *<nombre / @tag>*_
+┣ 🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
+┣ 🎖️ _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
+┣ 🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
+┣ 🎖️ _${usedPrefix}prostituto *<nombre / @tag>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}prostituta *<nombre / @tag>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}gay2 *<nombre / @tag>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}lesbiana *<nombre / @tag>*_
