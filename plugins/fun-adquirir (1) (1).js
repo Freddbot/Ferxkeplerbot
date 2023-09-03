@@ -10,19 +10,23 @@ m.reply(`*Precios del bot*
 
 _*PRECIOS*_
 
-• 1 BOT 3USD
-• 2 BOT 6USD
-• 3 BOT 9USD
-• 4 BOT 10USD
-• 5 BOT 12USD
+• 1 BOT 60 Pesos Mx
+• 2 BOT 120 Pesos Mx
+• 3 BOT 170 Pesos Mx
+• 4 BOT 220 Pesos Mx
+• 5 BOT 260 Pesos Mx
 
-• BOT PERSONALIZADOS 20USD
+*_BOT MENSUAL_*
+
+• 1 BOT MENSUAL TIENE PRECIO DE 30 PESOS ‚ SE PAGA TODOS LOS MESES
+
+• BOT PERSONALIZADOS 400 PESOS
 
 *🛒|• +300 COMANDOS INFO AL PRIVADO DE :*
  https://wa.me/message/MBTBZMTEGVEHL1
 
 METODO DE PAGO: 
-PAYPAL Y TARJETA DE CRÉDITO O DEBITO`, null, {
+PAYPAL Y TRANSFERENCIA O DEPÓSITO `, null, {
 mentions: [a, b]
 })}
 handler.help = ['adquerir']
