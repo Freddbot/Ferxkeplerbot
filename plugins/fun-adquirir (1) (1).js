@@ -12,9 +12,9 @@ _*PRECIOS*_
 
 • 1 BOT 60 Pesos Mx
 • 2 BOT 120 Pesos Mx
-• 3 BOT 170 Pesos Mx
-• 4 BOT 220 Pesos Mx
-• 5 BOT 260 Pesos Mx
+• 3 BOT 160 Pesos Mx
+• 4 BOT 200 Pesos Mx
+• 5 BOT 240 Pesos Mx
 
 *_BOT MENSUAL_*
 
