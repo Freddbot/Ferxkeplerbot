@@ -14,7 +14,7 @@ _2.- Las imágenes/videos/sticker/audios/etc no son compartidos con nadie_
 _3.- Su numero de teléfono no es compartido con absolutamente nadie_
 _4.- Datos de tarjetas, ubicaciones, direcciones, etc son eliminados inmediatamente y no se comparten con absolutamente nadie_
 _5.- Todas las conversaciones son eliminadas cada determinado tiempo y no se hace backup (no se guarda) de ningún tipo de información/conversación_
--6.- Si el bot es eliminado de un grupo‚ Se podrá agregar nuevamente luego de aver pasado 15 dias_
+_-6.- Si el bot es eliminado de un grupo‚ Se podrá agregar nuevamente luego de aver pasado 15 dias_
 
 *⚠️ Términos de uso*
 _1.- No nos hacemos responsables de un mal uso que se le pueda dar al Bot_
