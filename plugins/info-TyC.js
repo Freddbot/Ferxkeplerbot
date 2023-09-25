@@ -14,6 +14,7 @@ _2.- Las imágenes/videos/sticker/audios/etc no son compartidos con nadie_
 _3.- Su numero de teléfono no es compartido con absolutamente nadie_
 _4.- Datos de tarjetas, ubicaciones, direcciones, etc son eliminados inmediatamente y no se comparten con absolutamente nadie_
 _5.- Todas las conversaciones son eliminadas cada determinado tiempo y no se hace backup (no se guarda) de ningún tipo de información/conversación_
+-6.- Si el bot es eliminado de un grupo‚ Se podrá agregar nuevamente luego de aver pasado 15 dias_
 
 *⚠️ Términos de uso*
 _1.- No nos hacemos responsables de un mal uso que se le pueda dar al Bot_
@@ -27,30 +28,20 @@ _6.- Los audios/notas de voz/imágenes/videos o cualquier otro archivo multimedi
 _- Si en algún momento recibe un mensaje del numero del Bot y no es un comando posiblemente sea de el propietario del Bot o el propietario del numero, este es un persona real por lo que se le pide que no le falte el respeto_
 
 *➤ Base usada para este Bot:*
-*- https://github.com/BochilGaming/games-wabot-md*
+*- https://buitre.boxmineworld.com/*
 
 *➤ Agradecimientos a:*
-*- Unx21*
-*- Narutomo*
-*- BochilGaming*
-*- Unxteam*
-*- Bochilteam*
-*- ConfuMods*
-*- Theh2so4*
-*- Hiro*
-*- The.sad.boy01*
-*- botstylee*
-*- Amel*
-*- FatihArridho*
-*- Adiwajshing*
-*- Darlyn*
-*- Etc.*
+*- Buitre OFC*
+*- Diego OFC*
+*- Erika*
+*- Bruno Sobrino*
+*- Virruz OFC*
 
 *⁉️ Te quedaron dudas?*
 _- Si todavía tienes alguna duda o reclamo de lo mencionado aqui o referente al Bot, contáctame a mi numero personal al cual estaré respondiendo lo antes posible para brindarte una solución y/o hacerme responsable de alguna reclamación_ 
 
-> wa.me/5219992095479
-> Bruno Sobrino 
-> Correo electronico: theshadowbrokers133@gmailcom
+> wa.me/604135921
+> Buitre OFC
+> Correo electronico: buitre167282@gmail.com
 
-*∆ THE MYSTIC - BOT - MD ∆*`;
+*∆ The Buitre BOT ∆*`;
