@@ -12,7 +12,7 @@ global.owner = [
   ['34604135921','💫 Mystic - Tester Fabri115💫', true]
 ];
 
-global.suittag = ['34604135921'];
+global.suittag = ['573215231131'];
 global.prems = ['34604135921'];
 
 global.packname = '@iambuitre';
