@@ -1,4 +1,4 @@
-oliwindow.onload = () => {
+window.onload = () => {
   const chat = document.querySelector('div.container-fluid');
   function addMsg(obj) {
     const html = document.createElement('span');
