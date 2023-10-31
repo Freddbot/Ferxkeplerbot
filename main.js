@@ -477,7 +477,7 @@ setInterval(async () => {
   const status = global.db.data.settings[conn.user.jid] || {};
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `🤖 ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ: ${uptime} ┃ 👑 ʙʏ @ɪᴀᴍʙᴜɪᴛʀᴇ ┃ 🔗 ᴄᴜᴇɴᴛᴀs ᴏғᴄ: http://buitre.boxmineworld.com`;
+  const bio = `🤖 ʙᴜɪᴛʀᴇ ʙᴏᴛ ᴀᴄᴛɪᴠᴏ: ${uptime} ┃ 👑 ʙʏ @ɪᴀᴍʙᴜɪᴛʀᴇ ┃ 🔗 ᴄᴜᴇɴᴛᴀs ᴏғᴄ: http://buitre.boxmineworld.com`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
