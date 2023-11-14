@@ -6,7 +6,9 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
   const chat = global.db.data.chats[m.chat];
   const bot = global.db.data.settings[this.user.jid] || {};
   if (bot.antiPrivate && !isOwner && !isROwner) {
-    await m.reply(`*[❗] ʜᴏʟᴀ @${m.sender.split`@`[0]}, Está Prohibido hablar al privado del bot por lo cual serás bloqueado‚Si quieres usar el bot lo puedes hacer en el siguiente grupo:https://chat.whatsapp.com/JIz9Snzgt2X4TUDmTxlnRd*`, false, {mentions: [m.sender]});
+    await m.reply(`*[❗] ʜᴏʟᴀ @${m.sender.split`@`[0]}, 𝐄𝐬𝐭𝐚 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐡𝐚𝐛𝐥𝐚𝐫 𝐚𝐥 𝐩𝐫𝐢𝐯𝐚𝐝𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭 𝐩𝐨𝐫 𝐥𝐨 𝐜𝐮𝐚𝐥 𝐬𝐞𝐫𝐚𝐬 𝐛𝐥𝐨𝐪𝐮𝐞𝐚𝐝𝐨‚𝐒𝐢 𝐪𝐮𝐢𝐞𝐫𝐞𝐬 𝐮𝐬𝐚𝐫 𝐞𝐥 𝐛𝐨𝐭 𝐥𝐨 𝐩𝐮𝐞𝐝𝐞𝐬 𝐡𝐚𝐜𝐞𝐫 𝐞𝐧 𝐞𝐥 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 𝐠𝐫𝐮𝐩𝐨:https://chat.whatsapp.com/JIz9Snzgt2X4TUDmTxlnRd
+
+𝐅𝐄𝐋𝐈𝐙 𝐍𝐀𝐕𝐈𝐃𝐀𝐃`, false, {mentions: [m.sender]});
     await this.updateBlockStatus(m.chat, 'block');
   }
   return !1;
