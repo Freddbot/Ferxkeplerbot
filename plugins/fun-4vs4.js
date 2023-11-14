@@ -5,23 +5,23 @@ let a = ps.getRandom()
 let b
 do b = ps.getRandom()
 while (b === a)
-m.reply(`🥷🏽⊱┄ *BUITRE LIST*┄⊰🥷🏽
+m.reply(`🧝🏼‍♂️⊱┄ *BUITRE LIST*┄⊰🧝🏼‍♂️
 
 𝗠𝗢𝗗𝗢: 𝟒𝐕𝐒𝟒
 
-🥷🏽┇𝗝𝗨𝗚𝗔𝗗𝗢𝗥𝗘𝗦┇🥷🏽
+🎅🏼┇𝗝𝗨𝗚𝗔𝗗𝗢𝗥𝗘𝗦┇🎅🏼
 
 ⇉
 ⇉
 ⇉
 ⇉
 
-🥷🏽┇𝗦𝗨𝗣𝗟𝗘𝗡𝗧𝗘𝗦┇🥷🏽
+☃️┇𝗦𝗨𝗣𝗟𝗘𝗡𝗧𝗘𝗦┇☃️
 
 ⇉
 ⇉
 
-🥷🏽┇𝗗𝗢𝗡𝗔𝗗𝗢𝗥 𝗗𝗘 𝗦𝗔𝗟𝗜𝗧𝗔┇🥷🏽
+🎁┇𝗗𝗢𝗡𝗔𝗗𝗢𝗥 𝗗𝗘 𝗦𝗔𝗟𝗜𝗧𝗔┇🎁
 
 ⇉
 *_LISTA BY @iambuitre_*`, null, {
