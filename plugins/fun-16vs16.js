@@ -5,33 +5,33 @@ let a = ps.getRandom()
 let b
 do b = ps.getRandom()
 while (b === a)
-m.reply(`🥷🏽┊ *_BUITRE LIST_*┊🥷🏽
+m.reply(`☃️┊ *_BUITRE LIST_*┊☃️
 
 *MODO:* 𝟏𝟔 𝐕𝐒 𝟏𝟔
 
 𝔼𝕊ℂ𝕌𝔸𝔻ℝ𝔸 #𝟙 
-🥷🏽⇉ 
-🥷🏽⇉ 
-🥷🏽⇉ 
-🥷🏽⇉  
+🎅🏼⇉ 
+🎅🏼⇉ 
+🎅🏼⇉ 
+🎅🏼⇉  
 
 𝔼𝕊ℂ𝕌𝔸𝔻ℝ𝔸 #𝟚
-🥷🏽⇉ 
-🥷🏽⇉
-🥷🏽⇉
-🥷🏽⇉ 
+🎅🏼⇉ 
+🎅🏼⇉
+🎅🏼⇉
+🎅🏼⇉ 
 
 𝔼𝕊ℂ𝕌𝔸𝔻ℝ𝔸 #𝟛
-🥷🏽⇉ 
-🥷🏽⇉  
-🥷🏽⇉ 
-🥷🏽⇉
+🎅🏼⇉ 
+🎅🏼⇉  
+🎅🏼⇉ 
+🎅🏼⇉
 
 𝔼𝕊ℂ𝕌𝔸𝔻ℝ𝔸 #𝟜 
-🥷🏽⇉ 
-🥷🏽⇉  
-🥷🏽⇉ 
-🥷🏽⇉
+🎅🏼⇉ 
+🎅🏼⇉  
+🎅🏼⇉ 
+🎅🏼⇉
 
 *_LISTA BY @iambuitre_*`, null, {
 mentions: [a, b]
