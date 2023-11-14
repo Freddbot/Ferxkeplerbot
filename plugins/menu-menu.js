@@ -20,7 +20,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `*╭━━━[𝗕𝗨𝗜𝗧𝗥𝗘 𝗕𝗢𝗧]━━⬣*
+    const str = `*╭━━━[⛄𝗕𝗨𝗜𝗧𝗥𝗘 𝗕𝗢𝗧⛄]━━⬣*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┃➺ *ʜᴏʟᴀ, ${taguser}*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
@@ -32,6 +32,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃➺ *Tiempo activo:* ${uptime}
 ┃➺ *Usuarios:* ${rtotalreg}
 *╰━━━━━━━━━━━━⬣*
+
+      🎄𝐅𝐄𝐋𝐈𝐙 𝐍𝐀𝐕𝐈𝐃𝐀𝐃🎄
 
 *╭━━━[𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐔𝐒𝐔𝐀𝐑𝐈𝐎]━━⬣*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
@@ -69,7 +71,7 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 *╭━━━[𝗨𝗡𝗘 𝗨𝗡 𝗕𝗢𝗧 𝗔 𝗧𝗨 𝗚𝗥𝗨𝗣𝗢]━━⬣*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ *👽_Escribe Al +34604135921_*
+┣ *👽_Escribe Al +50664527056_*
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
