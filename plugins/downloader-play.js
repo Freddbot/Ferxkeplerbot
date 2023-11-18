@@ -1,112 +1,108 @@
-import fetch from 'node-fetch';
-import axios from 'axios';
-import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
-import fs from "fs";
-import yts from 'yt-search';
-let limit1 = 100;
-let limit2 = 400;
-let limit_a1 = 50;
-let limit_a2 = 400;
-const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `*[ ℹ️ ] Hace falta el título o enlace del video de YouTube.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Good Feeling - Flo Rida_`;
-    const yt_play = await search(args.join(' '));
-    let additionalText = '';
-    if (command === 'play') {
-      additionalText = 'audio';
-    } else if (command === 'play2') {
-      additionalText = 'vídeo';
+importar  buscar  desde  'node-fetch' ;
+importar  axios  desde  'axios' ;
+importar  { youtubedl ,  youtubedlv2 }  desde  '@bochilteam/scraper' ;
+importar  fs  desde  "fs" ;
+importar  yts  desde  'yt-search' ;
+dejar  límite1  =  100 ;
+sea  límite2  =  400 ;
+sea  limit_a1  =  50 ;
+sea  limit_a2  =  400 ;
+controlador constante  =  asíncrono  (  m , {  conexión , comando , argumentos , texto , prefijo usado } )  =>  {
+  if  ( ! text )  throw  `*[ ℹ️ ] Hace falta el título o enlace del video de YouTube.*\n\n*[ 💡 ] Ejemplo:* _ $ { usedPrefix  +  command } Good Feeling - Flo Rida_` ;
+    const  yt_play  =  espera  búsqueda ( args . join ( '' ) ) ;
+    let  texto adicional  =  '' ;
+    si  ( comando  ===  'reproducir' )  {
+      Texto adicional  =  'audio' ;
+    }  si no  ( comando === 'jugar2' ) {    
+      texto adicional  =  'vídeo' ;
     }
-    const texto1 = `*[ 📥 ] Descargas - Play*\n\n▢ *Título:* ${yt_play[0].title}\n\n▢ *Publicado:* ${yt_play[0].ago}\n\n▢ *Duración:* ${secondString(yt_play[0].duration.seconds)}\n\n▢ *Vistas:* ${`${MilesNumber(yt_play[0].views)}`}\n\n▢ *Autor:* ${yt_play[0].author.name}\n\n▢ *ID:* ${yt_play[0].videoId}\n\n▢ *Tipo:* ${yt_play[0].type}\n\n▢ *Enlace:* ${yt_play[0].url}\n\n▢ *Canal:* ${yt_play[0].author.url}\n\n*[ ℹ️ ] Se está enviando el ${additionalText}. espere...*`.trim();
-    conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
-    if (command == 'play') {
-    try {   
-    const audio = global.API('ApiEmpire', `/api/v1/ytmp3?url=${yt_play[0].url}`)
-    const ttl = await yt_play[0].title
-    const buff_aud = await getBuffer(audio);
-    const fileSizeInBytes = buff_aud.byteLength;
-    const fileSizeInKB = fileSizeInBytes / 1024;
-    const fileSizeInMB = fileSizeInKB / 1024;
-    const size = fileSizeInMB.toFixed(2);       
-    if (size >= limit_a2) {  
-    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Descargue su vídeo en ${audio}*`}, {quoted: m});
-    return;    
+    const  texto1  =  `*[ 📥 ] Descargas - Play*\n\n▢ *Título:* ${ yt_play [ 0 ] . título } \n\n▢ *Publicado:* ${ yt_play [ 0 ] . hace } \n\n▢ *Duración:* ${ secondString ( yt_play [ 0 ] . duración . segundos ) } \n\n▢ *Vistas:* ${ ` ${ MilesNumber ( yt_play [ 0 ] . vistas ) } ` } \n\n▢ *Autor:* ${ yt_play [ 0 ] . autor . nombre } \n\n▢ *ID:* ${ yt_play [ 0 ] . videoId } \n\n▢ *Tipo:* ${ yt_play [ 0 ] . escriba } \n\n▢ *Enlace:* ${ yt_play [ 0 ] . url } \n\n▢ *Canal:* ${ yt_play [ 0 ] . autor . url } \n\n*[ ℹ️ ] Se está enviando el ${ adicionalText } . espera...*` . recortar ( ) ;
+    conexión . sendMessage ( m . chat ,  { imagen : { url : yt_play [ 0 ] . miniatura } ,  título : texto1 } ,  { citado : m } ) ;
+    si  ( comando  ==  'reproducir' )  {
+    intentar  {   
+     audio  constante =  global . API ( 'ApiEmpire' , `/api  / v1/ytmp3?url= ${ yt_play [ 0 ] .url } ` )
+    const  ttl  =  espera  yt_play [ 0 ] . título
+    const  buff_aud  =  espera  getBuffer ( audio ) ;
+    const  fileSizeInBytes  =  buff_aud . byteLongitud ;
+    const  tamañoarchivoInKB  =  tamañoarchivoInBytes  /  1024 ;
+    const  tamaño de archivo en MB  =  tamaño de archivo en KB  /  1024 ;
+     tamaño  constante = tamaño  de archivo en MB . a fijo ( 2 ) ;       
+    si  ( tamaño  >=  límite_a2 )  {  
+    espera  conexión . sendMessage ( m . chat ,  { text : `*[ ✔ ] Descargue su vídeo en ${ audio } *` } ,  { quoted : m } ) ;
+    devolver ;    
     }     
-    if (size >= limit_a1 && size <= limit_a2) {  
-    await conn.sendMessage(m.chat, {document: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
-    return;
-    } else {
-    await conn.sendMessage(m.chat, {audio: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
-    return;    
-    }} catch {
-    throw '*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';    
-    }}
-    if (command == 'play2') {
-    try {   
-    const video = global.API('ApiEmpire', `/api/v1/ytmp4?url=${yt_play[0].url}`)
-    const ttl2 = await yt_play[0].title
-    const buff_vid = await getBuffer(video);
-    const fileSizeInBytes2 = buff_vid.byteLength;
-    const fileSizeInKB2 = fileSizeInBytes2 / 1024;
-    const fileSizeInMB2 = fileSizeInKB2 / 1024;
-    const size2 = fileSizeInMB2.toFixed(2);       
-    if (size2 >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Descargue su video en ${video}*`}, {quoted: m});
-    return;    
+    si  ( tamaño  >=  límite_a1  &&  tamaño  <=  límite_a2 )  {  
+    espera  conexión . sendMessage ( m . chat ,  { documento : buff_aud ,  tipo mime : 'audio/mpeg' ,  nombre de archivo : ttl  +  `.mp3` } ,  { citado : m } ) ;   
+    devolver ;
+    }  demás  {
+    espera  conexión . sendMessage ( m . chat ,  { audio : buff_aud ,  tipo mime : 'audio/mpeg' ,  nombre de archivo : ttl  +  `.mp3` } ,  { citado : m } ) ;   
+    devolver ;    
+    } }  atrapar  {
+    throw  '*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*' ;    
+    } }
+    si  ( comando  ==  'jugar2' )  {
+    intentar  {   
+     vídeo  constante =  global . API ( 'ApiEmpire' , `/api  / v1/ytmp4?url= ${ yt_play [ 0 ] .url } ` )
+    const  ttl2  =  esperar  yt_play [ 0 ] . título
+    const  buff_vid  =  espera  getBuffer ( vídeo ) ;
+    const  fileSizeInBytes2  =  buff_vid . byteLongitud ;
+    const  tamañoarchivoInKB2  =  tamañoarchivoInBytes2  /  1024 ;
+    const  tamañoarchivoInMB2  =  tamañoarchivoInKB2  /  1024 ;
+     tamaño  constante2 =  tamaño de archivo en MB2 . a fijo ( 2 ) ;       
+    si  ( tamaño2  >=  límite2 )  {  
+    espera  conexión . sendMessage ( m . chat ,  { text : `*[ ✔ ] Descargue su video en ${ video } *` } ,  { quoted : m } ) ;
+    devolver ;    
     }     
-    if (size2 >= limit1 && size2 <= limit2) {  
-    await conn.sendMessage(m.chat, {document: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
-    return;
-    } else {
-    await conn.sendMessage(m.chat, {video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
-    return;    
-    }} catch {
-    throw '*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*';    
+    if  ( tamaño2  >=  límite1  &&  tamaño2  <=  límite2 )  {  
+    espera  conexión . sendMessage ( m . chat ,  { documento : buff_vid ,  tipo mime : 'video/mp4' ,  nombre de archivo : ttl2  +  `.mp4` } ,  { citado : m } ) ;   
+    devolver ;
+    }  demás  {
+    espera  conexión . sendMessage ( m.chat , { vídeo : buff_vid , mimetype : ' video/mp4' , nombre de archivo : ttl2 + `.mp4` } , { citado : m } ) ;         
+    devolver ;    
+    } }  atrapar  {
+    throw  '*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*' ;    
     }
   }
-};
-handler.help = ['play', 'play2'].map((v) => v + ' < busqueda >');
-handler.tags = ['downloader'];
-handler.command = /^(play|play2)$/i;
-export default handler;
-
-async function search(query, options = {}) {
-  const search = await yts.search({query, hl: 'es', gl: 'ES', ...options});
-  return search.videos;
+} ;
+manipulador . ayuda  =  [ 'reproducir' ,  'reproducir2' ] . map ( ( v )  =>  v  +  '<busqueda>' ) ;
+manipulador . etiquetas  =  [ 'descargador' ] ;
+manipulador . comando  =  / ^ ( reproducir | reproducir2 ) $ / i ;
+exportar  controlador predeterminado  ;búsqueda de función  asíncrona ( consulta , opciones = { } ) {    
+   búsqueda  constante =  esperar  yts . buscar ( { consulta ,  hl : 'es' ,  gl : 'ES' , ... opciones } ) ;
+  volver  a buscar . vídeos ;
 }
 
-function MilesNumber(number) {
-  const exp = /(\d)(?=(\d{3})+(?!\d))/g;
-  const rep = '$1.';
-  const arr = number.toString().split('.');
-  arr[0] = arr[0].replace(exp, rep);
-  return arr[1] ? arr.join('.') : arr[0];
+función  NúmeroMillas ( número )  {
+  const  exp  =  / ( \d ) (? = ( \d {3} ) + ( ? ! \ d ) ) / g ;
+   representante  constante =  '$1.' ;
+  constante  arr  =  número . Encadenar ( ) . dividir ( '.' ) ;
+  arreglo [ 0 ]  =  arreglo [ 0 ] . reemplazar ( exp ,  rep ) ;
+  devolver  arreglo [ 1 ] ? llegar . unirse ( '.' ) : arr [ 0 ] ;
 }
 
-function secondString(seconds) {
-  seconds = Number(seconds);
-  const d = Math.floor(seconds / (3600 * 24));
-  const h = Math.floor((seconds % (3600 * 24)) / 3600);
-  const m = Math.floor((seconds % 3600) / 60);
-  const s = Math.floor(seconds % 60);
-  const dDisplay = d > 0 ? d + (d == 1 ? 'd ' : 'd ') : '';
-  const hDisplay = h > 0 ? h + (h == 1 ? 'h ' : 'h ') : '';
-  const mDisplay = m > 0 ? m + (m == 1 ? 'm ' : 'm ') : '';
-  const sDisplay = s > 0 ? s + (s == 1 ? 's' : 's') : '';
-  return dDisplay + hDisplay + mDisplay + sDisplay;
+función  segundacadena ( segundos )  {
+  segundos  =  Número ( segundos ) ;
+  constante  d  =  Matemáticas . piso ( segundos  /  ( 3600  *  24 ) ) ;
+  constante  h  =  Matemáticas . piso ( ( segundos  %  ( 3600  *  24 ) )  /  3600 ) ;
+  constante  m  =  Matemáticas . piso ( ( segundos  %  3600 )  /  60 ) ;
+  constante  s  =  Matemáticas . piso ( segundos  %  60 ) ;
+  constante  dPantalla  =  d  >  0 ? d  +  ( d  ==  1 ? 'd ' : 'd ' ) : '' ;
+  constante  hPantalla  =  h  >  0 ? h  +  ( h  ==  1 ? 'h ' : 'h ' ) : '' ;
+  constante  mPantalla  =  m  >  0 ? m  +  ( m  ==  1 ? 'm ' : 'm ' ) : '' ;
+  constante  sPantalla  =  s  >  0 ? s  +  ( s  ==  1 ? 's' : 's' ) : '' ;
+  devolver  dDisplay  +  hDisplay  +  mDisplay  +  sDisplay ;
 }
 
-function bytesToSize(bytes) {
-  return new Promise((resolve, reject) => {
-    const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-    if (bytes === 0) return 'n/a';
-    const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
-    if (i === 0) resolve(`${bytes} ${sizes[i]}`);
-    resolve(`${(bytes / (1024 ** i)).toFixed(1)} ${sizes[i]}`);
-  });
-}
-
-const getBuffer = async (url, options) => {
-    options ? options : {};
-    const res = await axios({method: 'get', url, headers: {'DNT': 1, 'Upgrade-Insecure-Request': 1,}, ...options, responseType: 'arraybuffer'});
-    return res.data;
-};
+función  bytesToSize ( bytes )  {
+  devolver nueva  Promesa ( ( resolver ,  rechazar )  =>  {
+     tamaños  constantes =  [ 'Bytes',  'KB' ,  'MB' ,  'GB' ,  'TB' ] ;
+    si ( bytes  ===  0 )  devuelve  'n/a' ;
+    const  i  =  parseInt ( Matemáticas . piso ( Matemáticas . log ( bytes )  /  Matemáticas ( 1024 ) ) )_ _ _ _ _ 
+    si  ( i  ===  0 )  resolver ( ` ${ bytes } ${ tamaños [ i ] } `);
+    resolver ( ` ${ ( bytes  /  ( 1024  **  i ) ) . toFixed ( 1 ) }  ${ tamaños [ i ] } `);
+  } ) ;
+  }const  getBuffer  =  asíncrono  ( url ,  opciones )  =>  {
+    opciones ? opciones : { } ;
+    const  res  =  await  axios ( { método : 'obtener' , URL ,  encabezados : { 'DNT' : 1 ,  'Solicitud de actualización-insegura' : 1 , } , ... opciones ,  tipo de respuesta : 'arraybuffer' } ) ;
+    devolver  resolución . datos ;
+} ;
